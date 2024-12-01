@@ -1,7 +1,7 @@
 pipeline {
     agent any
     tools {
-        nodejs 'NodeJs' // Ensure this matches the NodeJS installation in Jenkins
+        nodejs 'NodeJS' // Ensure this matches the NodeJS installation in Jenkins
     }
     environment {
         CI = 'true'
