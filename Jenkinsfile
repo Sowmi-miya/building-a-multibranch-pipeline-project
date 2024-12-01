@@ -13,9 +13,10 @@ pipeline {
             steps {
                 // Added debug echo for clarity
                 bat 'echo Running test script'
-                // Corrected path and escaped quotes
-                bat '"C:\\Program Files\\Git\\bin\\bash.exe" -c "./jenkins/scripts/test.sh"'            
-                }
-        }
-    }
+                
+                // Corrected path and ensured proper escaping of quotes
+                bat '"C:\\Program Files\\Git\\bin\\bash.exe" -c "./jenkins/scripts/test.sh"'
+            }
+        }
+    }
 }
